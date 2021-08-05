@@ -1,0 +1,19 @@
+.card {
+    background-color: crimson;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 3px solid #555;
+    margin: 10px;
+}
+
+.card .title {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.card .content {
+    background-color: #aaa;
+    color: #333;
+    padding: 10px;
+}

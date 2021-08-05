@@ -8,8 +8,6 @@ const Aleatorio = (props) => {
 
     return (
         <div>
-            <hr />
-
             <h2>O número aleatório é: <strong>{ randomNumber }</strong></h2>
         </div>
     )
