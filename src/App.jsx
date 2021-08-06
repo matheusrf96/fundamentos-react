@@ -16,19 +16,19 @@ const App = () => {
             <h1>Fundamentos React</h1>
 
             <div className="cards">
-                <Card title="01 - Primeiro componente">
+                <Card title="01 - Primeiro componente" color="crimson">
                     <Primeiro />
                 </Card>
 
-                <Card title="02 - Fragmento">
+                <Card title="02 - Fragmento" color="#007">
                     <Fragmento />
                 </Card>
 
-                <Card title="03 - Componente com parâmetros">
+                <Card title="03 - Componente com parâmetros" color="#FA6900">
                     <ComParametro titulo="Segundo componente" subtitulo="subtítulo teste" />
                 </Card>
 
-                <Card title="04 - Exemplo de Card">
+                <Card title="04 - Exemplo de Card" color="#555">
                     <Aleatorio min={1} max={60} />
                     <Aleatorio min={1} max={60} />
                     <Aleatorio min={1} max={60} />
