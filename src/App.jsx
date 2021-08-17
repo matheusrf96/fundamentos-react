@@ -4,11 +4,12 @@ import Primeiro from './components/basic/Primeiro'
 import ComParametro from "./components/basic/ComParametro"
 import Fragmento from "./components/basic/Fragmento"
 import Aleatorio from './components/basic/Aleatorio'
+import Familia from './components/basic/Familia'
+import FamiliaMembro from './components/basic/FamiliaMembro'
 
 import Card from './components/layout/Card'
 
 import './App.css'
-
 
 const App = () => {
     return (
@@ -35,7 +36,15 @@ const App = () => {
                     <Aleatorio min={1} max={60} />
                     <Aleatorio min={1} max={60} />
                     <Aleatorio min={1} max={60} />
-                </Card>'
+                </Card>
+
+                <Card title="05 - Componente com filhos" color="#00C8F8">
+                    <Familia surname="Rodrigues">
+                        <FamiliaMembro name="Teste" />
+                        <FamiliaMembro name="Teste 2" />
+                        <FamiliaMembro name="Teste 3" />
+                    </Familia>
+                </Card>
             </div>
         </div>
     )
