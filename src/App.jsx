@@ -7,6 +7,7 @@ import Aleatorio from './components/basic/Aleatorio'
 import Familia from './components/basic/Familia'
 import FamiliaMembro from './components/basic/FamiliaMembro'
 import ListaAlunos from './components/repetition/ListaAlunos'
+import TabelaProdutos from './components/repetition/TabelaProdutos'
 
 import Card from './components/layout/Card'
 
@@ -49,6 +50,10 @@ const App = () => {
 
                 <Card title="06 - Repetição" color="#FF4C65">
                     <ListaAlunos />
+                </Card>
+
+                <Card title="07 - Desafio Repetição" color="#7FDBFF">
+                    <TabelaProdutos />
                 </Card>
             </div>
         </div>

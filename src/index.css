@@ -9,3 +9,12 @@ body {
 h1, h2, h3 {
     font-weight: 200;
 }
+
+table, td, th {
+    border: 1px solid black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
