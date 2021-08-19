@@ -5,7 +5,7 @@ import products from '../../data/produtos'
 const TabelaProdutos = (props) => {
     const productsList = products.map((product, i) => {
         return (
-            <tr>
+            <tr key={i}>
                 <td>#{ product.id }</td>
                 <td>{ product.name }</td>
                 <td>{ product.price.toFixed(2) }</td>
@@ -14,14 +14,18 @@ const TabelaProdutos = (props) => {
     })
 
     return (
-        <table className="styled-table">
-            <tr>
-                <th>ID</th>
-                <th>Produto</th>
-                <th>Preço</th>
-            </tr>
+        <table style={{}}>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
 
-            { productsList }
+            <tbody>
+                { productsList }
+            </tbody>
         </table>
     )
 }
