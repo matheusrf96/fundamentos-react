@@ -8,13 +8,13 @@ const TabelaProdutos = (props) => {
             <tr key={i}>
                 <td>#{ product.id }</td>
                 <td>{ product.name }</td>
-                <td>{ product.price.toFixed(2) }</td>
+                <td>R$ { product.price.toFixed(2).replace('.', ',') }</td>
             </tr>
         )
     })
 
     return (
-        <table style={{}}>
+        <table border="1">
             <thead>
                 <tr>
                     <th>ID</th>
