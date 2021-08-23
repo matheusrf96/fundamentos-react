@@ -8,6 +8,7 @@ import Familia from './components/basic/Familia'
 import FamiliaMembro from './components/basic/FamiliaMembro'
 import ListaAlunos from './components/repetition/ListaAlunos'
 import TabelaProdutos from './components/repetition/TabelaProdutos'
+import ParOuImpar from './components/conditional/ParOuImpar'
 
 import Card from './components/layout/Card'
 
@@ -54,6 +55,10 @@ const App = () => {
 
                 <Card title="07 - Desafio Repetição" color="#7FDBFF">
                     <TabelaProdutos />
+                </Card>
+
+                <Card title="08 - Renderização condicional" color="#982395">
+                    <ParOuImpar number={5} />
                 </Card>
             </div>
         </div>
