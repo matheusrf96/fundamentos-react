@@ -9,6 +9,7 @@ import FamiliaMembro from './components/basic/FamiliaMembro'
 import ListaAlunos from './components/repetition/ListaAlunos'
 import TabelaProdutos from './components/repetition/TabelaProdutos'
 import ParOuImpar from './components/conditional/ParOuImpar'
+import UserInfo from './components/conditional/UserInfo'
 
 import Card from './components/layout/Card'
 
@@ -59,6 +60,9 @@ const App = () => {
 
                 <Card title="08 - Renderização condicional" color="#982395">
                     <ParOuImpar number={5} />
+                    <UserInfo user={{ name: 'Matheus', age: 24, }} />
+                    <UserInfo user={{ email: 'teste@teste.com', }} />
+                    <UserInfo user={{}} />
                 </Card>
             </div>
         </div>
