@@ -11,6 +11,7 @@ import TabelaProdutos from './components/repetition/TabelaProdutos'
 import ParOuImpar from './components/conditional/ParOuImpar'
 import UserInfo from './components/conditional/UserInfo'
 import DiretaPai from './components/communication/DiretaPai'
+import IndiretaPai from './components/communication/IndiretaPai'
 
 import Card from './components/layout/Card'
 
@@ -68,6 +69,10 @@ const App = () => {
 
                 <Card title="09 - Comunicação Direta" color="#59323C">
                     <DiretaPai />
+                </Card>
+
+                <Card title="10 - Comunicação Indireta" color="#8BAD39">
+                    <IndiretaPai />
                 </Card>
             </div>
         </div>
