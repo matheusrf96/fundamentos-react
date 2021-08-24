@@ -10,6 +10,7 @@ import ListaAlunos from './components/repetition/ListaAlunos'
 import TabelaProdutos from './components/repetition/TabelaProdutos'
 import ParOuImpar from './components/conditional/ParOuImpar'
 import UserInfo from './components/conditional/UserInfo'
+import DiretaPai from './components/communication/DiretaPai'
 
 import Card from './components/layout/Card'
 
@@ -63,6 +64,10 @@ const App = () => {
                     <UserInfo user={{ name: 'Matheus', age: 24, }} />
                     <UserInfo user={{ email: 'teste@teste.com', }} />
                     <UserInfo user={{}} />
+                </Card>
+
+                <Card title="09 - Comunicação Direta" color="#59323C">
+                    <DiretaPai />
                 </Card>
             </div>
         </div>
