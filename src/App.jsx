@@ -12,6 +12,7 @@ import ParOuImpar from './components/conditional/ParOuImpar'
 import UserInfo from './components/conditional/UserInfo'
 import DiretaPai from './components/communication/DiretaPai'
 import IndiretaPai from './components/communication/IndiretaPai'
+import Input from './components/forms/Input'
 
 import Card from './components/layout/Card'
 
@@ -73,6 +74,10 @@ const App = () => {
 
                 <Card title="10 - Comunicação Indireta" color="#8BAD39">
                     <IndiretaPai />
+                </Card>
+
+                <Card title="11 - Componente Controlado (Input)" color="#E45F56">
+                    <Input />
                 </Card>
             </div>
         </div>
