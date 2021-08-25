@@ -1,15 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import IndiretaFilho from './IndiretaFilho'
 
 const IndiretaPai = (props) => {
-    const sendInfo = (name, age, active) => {
-        console.log(name, age, active)
-    }
+    const [name, setName] = useState('?')
+    const [age, setAge] = useState(0)
+    const [active, setActive] = useState(false)
 
-    let name = '?'
-    let age = 0
-    let active = false
+    const sendInfo = (name, age, active) => {
+        setName(name)
+        setAge(age)
+        setActive(active)
+    }
 
     return (
         <div>
