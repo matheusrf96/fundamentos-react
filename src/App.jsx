@@ -14,6 +14,7 @@ import DiretaPai from './components/communication/DiretaPai'
 import IndiretaPai from './components/communication/IndiretaPai'
 import Input from './components/forms/Input'
 import Contador from './components/counter/Contador'
+import Contador2 from './components/counter2/Cotador2'
 
 import Card from './components/layout/Card'
 
@@ -81,8 +82,12 @@ const App = () => {
                     <Input />
                 </Card>
 
-                <Card title="12 - Contador" color="#424242">
+                <Card title="12a - Contador" color="#424242">
                     <Contador initialNumber={ 5 } />
+                </Card>
+
+                <Card title="12b - Contador B" color="#424242">
+                    <Contador2 initialNumber={ 5 } />
                 </Card>
             </div>
         </div>
