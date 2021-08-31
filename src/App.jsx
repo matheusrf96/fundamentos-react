@@ -15,6 +15,7 @@ import IndiretaPai from './components/communication/IndiretaPai'
 import Input from './components/forms/Input'
 import Contador from './components/counter/Contador'
 import Contador2 from './components/counter2/Cotador2'
+import Mega from './components/mega/Mega'
 
 import Card from './components/layout/Card'
 
@@ -88,6 +89,10 @@ const App = () => {
 
                 <Card title="12b - Contador B" color="#424242">
                     <Contador2 initialNumber={ 5 } />
+                </Card>
+
+                <Card title="12b - Contador B" color="#424242">
+                    <Mega />
                 </Card>
             </div>
         </div>
