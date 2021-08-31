@@ -91,8 +91,8 @@ const App = () => {
                     <Contador2 initialNumber={ 5 } />
                 </Card>
 
-                <Card title="12b - Contador B" color="#424242">
-                    <Mega />
+                <Card title="13 - Mega" color="#B9006E">
+                    <Mega quantity={ 6 } />
                 </Card>
             </div>
         </div>

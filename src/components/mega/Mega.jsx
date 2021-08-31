@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
+
+import './Mega.css'
 
 const Mega = (props) => {
     const generateNumbers = (min, max, list) => {
@@ -20,9 +22,30 @@ const Mega = (props) => {
         return list
     }
 
+    const [quantity, setQuantity] = useState(props.quantity || 6)
+    const initialNumbers = generateNumbersList(quantity)
+    const [numbers, setNumbers] = useState(initialNumbers)
+
     return (
-        <div>
-            { generateNumbersList(6) }
+        <div className="mega">
+            <h2>Mega</h2>
+            <h3>{ numbers.join(' ') }</h3>
+            <div>
+                <label htmlFor="quantity">Qtd de números: </label>
+                <input
+                    min="6"
+                    max="15"
+                    type="number"
+                    name="quantity"
+                    id="quantity"
+                    value={ quantity }
+                    onChange={ (e) => {
+                        setQuantity(+e.target.value)
+                        setNumbers(generateNumbersList(+e.target.value))
+                    }}
+                />
+            </div>
+            <button onClick={ () => setNumbers(generateNumbersList(quantity)) }>Gerar Números</button>
         </div>
     )
 }
